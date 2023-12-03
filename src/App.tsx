@@ -3,6 +3,7 @@ import "./App.css";
 import NavBarMobile from "./components/NavBarMobile";
 import NavBar from "./components/NavBar";
 import Splash from "./components/Splash";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       </GridItem>
       <GridItem area="main">
         <Splash />
+        <AboutMe />
       </GridItem>
     </Grid>
   );

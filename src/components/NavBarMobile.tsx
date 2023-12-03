@@ -9,6 +9,9 @@ const NavBarMobile = () => {
 
   return (
     <HStack
+      position="fixed"
+      w="100%"
+      top="0"
       h="70px"
       p="10px 20px"
       justifyContent="space-between"

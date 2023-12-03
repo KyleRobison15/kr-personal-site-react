@@ -8,7 +8,7 @@ const Splash = () => {
     <Grid templateAreas={`"left right"`} templateColumns={"1fr 1fr"}>
       <GridItem
         area="left"
-        h="calc(100vh - 70px)"
+        h="100vh"
         bg={colorMode === "light" ? "gray.50" : "gray.700"}
       >
         Left

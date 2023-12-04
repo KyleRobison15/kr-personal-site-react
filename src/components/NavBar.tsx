@@ -9,6 +9,8 @@ const NavBar = () => {
 
   return (
     <HStack
+      zIndex="1000"
+      as="nav"
       position="fixed"
       w="100%"
       top="0"

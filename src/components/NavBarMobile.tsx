@@ -10,6 +10,7 @@ const NavBarMobile = () => {
   return (
     <HStack
       position="fixed"
+      zIndex="1000"
       w="100%"
       top="0"
       h="70px"

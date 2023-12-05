@@ -1,6 +1,6 @@
 import {
-  Box,
   Center,
+  Flex,
   Grid,
   GridItem,
   Image,
@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react";
 import MainHeading from "./MainHeading";
 import headShot from "../assets/Headshot_No_Background_2.png";
+import IconList from "./IconList";
 
 const Splash = () => {
   const { colorMode } = useColorMode();
@@ -30,15 +31,16 @@ const Splash = () => {
           pos="absolute"
           top="15vh"
         />
-        <Box
-          pos="absolute"
+        <Flex
           bg={colorMode === "light" ? "gray.200" : "gray.700"}
           h="45%"
           w="100%"
           clipPath="polygon(0 55%, 100% 0, 100% 100%, 0 100%);"
-          bottom="0"
-          left="0"
-        ></Box>
+          pos="relative"
+          justifyContent="center"
+        >
+          <IconList />
+        </Flex>
       </GridItem>
       <GridItem
         area="right"

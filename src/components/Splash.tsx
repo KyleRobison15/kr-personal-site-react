@@ -4,6 +4,7 @@ import {
   Grid,
   GridItem,
   Image,
+  Show,
   useColorMode,
 } from "@chakra-ui/react";
 import MainHeading from "./MainHeading";
@@ -14,7 +15,20 @@ const Splash = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <Grid templateAreas={`"left right"`} templateColumns={"45% 55%"}>
+    <Grid
+      templateAreas={{
+        base: `"left"`,
+        md: `"left right"`,
+        lg: `"left right"`,
+      }}
+      templateColumns={{
+        base: "1fr",
+        md: "45% 55%",
+        lg: "45% 55%",
+      }}
+      // templateAreas={`"left right"`}
+      // templateColumns={"45% 55%"}
+    >
       <GridItem
         area="left"
         h="100vh"
@@ -23,13 +37,15 @@ const Splash = () => {
         display="flex"
         alignItems="flex-end"
         pos="relative"
+        zIndex="0"
       >
         <Image
           src={headShot}
-          boxSize="65%"
+          w="525px"
+          h="65%"
           objectFit="cover"
           pos="absolute"
-          top="15vh"
+          bottom="20%"
         />
         <Flex
           bg={colorMode === "light" ? "gray.200" : "gray.700"}
@@ -42,14 +58,16 @@ const Splash = () => {
           <IconList />
         </Flex>
       </GridItem>
-      <GridItem
-        area="right"
-        bg={colorMode === "light" ? "gray.100" : "gray.900"}
-      >
-        <Center h="100%">
-          <MainHeading />
-        </Center>
-      </GridItem>
+      <Show above="md">
+        <GridItem
+          area="right"
+          bg={colorMode === "light" ? "gray.100" : "gray.900"}
+        >
+          <Center h="100%">
+            <MainHeading />
+          </Center>
+        </GridItem>
+      </Show>
     </Grid>
   );
 };

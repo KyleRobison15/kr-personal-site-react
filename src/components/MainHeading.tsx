@@ -4,7 +4,7 @@ import waveEmoji from "../assets/wave.png";
 
 const MainHeading = () => {
   return (
-    <Flex flexDirection="column" alignItems="end">
+    <Flex flexDirection="column" alignItems="center">
       <HStack mb={3}>
         <Image
           src={waveEmoji}

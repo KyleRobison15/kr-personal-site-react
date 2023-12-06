@@ -2,9 +2,9 @@ import { HStack, Icon, Link } from "@chakra-ui/react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
 
-const IconList = () => {
+const HIconList = () => {
   return (
-    <HStack gap="100px" pos="absolute" bottom="105px">
+    <HStack gap="90px" pos="absolute" bottom="80px">
       <Link href="https://github.com/KyleRobison15" isExternal>
         <Icon as={BsGithub} boxSize="40px" />
       </Link>
@@ -18,4 +18,4 @@ const IconList = () => {
   );
 };
 
-export default IconList;
+export default HIconList;

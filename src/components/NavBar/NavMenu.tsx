@@ -6,7 +6,7 @@ import {
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
-import { navMenuItems } from "../services/nav-menu-options";
+import { navMenuItems } from "../../services/nav-menu-options";
 
 const NavMenu = () => {
   return (

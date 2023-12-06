@@ -3,13 +3,16 @@ import {
   Flex,
   Grid,
   GridItem,
+  Hide,
   Image,
   Show,
   useColorMode,
 } from "@chakra-ui/react";
 import MainHeading from "./MainHeading";
 import headShot from "../assets/Headshot_No_Background_2.png";
-import IconList from "./IconList";
+import HIconList from "./IconList/HIconList";
+import VIconList from "./IconList/VIconList";
+import MobileHeading from "./MobileHeading";
 
 const Splash = () => {
   const { colorMode } = useColorMode();
@@ -18,16 +21,12 @@ const Splash = () => {
     <Grid
       templateAreas={{
         base: `"left"`,
-        md: `"left right"`,
         lg: `"left right"`,
       }}
       templateColumns={{
         base: "1fr",
-        md: "45% 55%",
         lg: "45% 55%",
       }}
-      // templateAreas={`"left right"`}
-      // templateColumns={"45% 55%"}
     >
       <GridItem
         area="left"
@@ -37,7 +36,6 @@ const Splash = () => {
         display="flex"
         alignItems="flex-end"
         pos="relative"
-        zIndex="0"
       >
         <Image
           src={headShot}
@@ -53,12 +51,18 @@ const Splash = () => {
           w="100%"
           clipPath="polygon(0 55%, 100% 0, 100% 100%, 0 100%);"
           pos="relative"
-          justifyContent="center"
+          justifyContent={["", "", "", "center"]}
         >
-          <IconList />
+          <Hide above="lg">
+            <MobileHeading />
+            <VIconList />
+          </Hide>
+          <Show above="lg">
+            <HIconList />
+          </Show>
         </Flex>
       </GridItem>
-      <Show above="md">
+      <Show above="lg">
         <GridItem
           area="right"
           bg={colorMode === "light" ? "gray.100" : "gray.900"}

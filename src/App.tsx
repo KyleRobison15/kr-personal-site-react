@@ -1,9 +1,9 @@
 import { Grid, GridItem, Hide, Show } from "@chakra-ui/react";
 import "./App.css";
-import NavBarMobile from "./components/NavBarMobile";
-import NavBar from "./components/NavBar";
 import Splash from "./components/Splash";
 import AboutMe from "./components/AboutMe";
+import NavBarMobile from "./components/NavBar/NavBarMobile";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
   return (

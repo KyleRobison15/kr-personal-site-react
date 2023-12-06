@@ -1,7 +1,7 @@
 import { Button, HStack, Image, useColorMode } from "@chakra-ui/react";
-import darkLogo from "../assets/KR_Logo_Dark.png";
-import lightLogo from "../assets/KR_Logo_Light.png";
-import ColorModeSwitch from "./ColorModeSwitch";
+import darkLogo from "../../assets/KR_Logo_Dark.png";
+import lightLogo from "../../assets/KR_Logo_Light.png";
+import ColorModeSwitch from "../ColorModeSwitch";
 
 const NavBar = () => {
   const { colorMode } = useColorMode();

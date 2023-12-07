@@ -1,5 +1,5 @@
 import {
-  Center,
+  Box,
   Flex,
   Grid,
   GridItem,
@@ -13,6 +13,7 @@ import headShot from "../assets/Headshot_No_Background_2.png";
 import HIconList from "./IconList/HIconList";
 import VIconList from "./IconList/VIconList";
 import MobileHeading from "./MobileHeading";
+import ScrollButton from "./ScrollButton";
 
 const Splash = () => {
   const { colorMode } = useColorMode();
@@ -43,7 +44,7 @@ const Splash = () => {
           h="65%"
           objectFit="cover"
           pos="absolute"
-          bottom="20%"
+          bottom="19%"
         />
         <Flex
           bg={colorMode === "light" ? "gray.200" : "gray.700"}
@@ -66,10 +67,22 @@ const Splash = () => {
         <GridItem
           area="right"
           bg={colorMode === "light" ? "gray.100" : "gray.900"}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          flexDirection="column"
+          pos="relative"
         >
-          <Center h="100%">
-            <MainHeading />
-          </Center>
+          <MainHeading />
+          <Box pos="absolute" bottom="85px">
+            <ScrollButton
+              text={"About Me"}
+              to={"aboutme"}
+              offset={-70}
+              lightBg={"gray.100"}
+              darkBg={"gray.900"}
+            />
+          </Box>
         </GridItem>
       </Show>
     </Grid>

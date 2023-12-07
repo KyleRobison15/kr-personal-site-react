@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const HIconList = () => {
   return (
-    <HStack gap="90px" pos="absolute" bottom="80px">
+    <HStack gap="90px" pos="absolute" bottom="85px">
       <Link href="https://github.com/KyleRobison15" isExternal>
         <Icon as={BsGithub} boxSize="40px" />
       </Link>

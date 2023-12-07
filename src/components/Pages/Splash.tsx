@@ -8,18 +8,19 @@ import {
   Show,
   useColorMode,
 } from "@chakra-ui/react";
-import MainHeading from "./MainHeading";
-import headShot from "../assets/Headshot_No_Background_2.png";
-import HIconList from "./IconList/HIconList";
-import VIconList from "./IconList/VIconList";
-import MobileHeading from "./MobileHeading";
-import ScrollButton from "./ScrollButton";
+import MainHeading from "../MainHeading";
+import headShot from "../../assets/Headshot_No_Background_2.png";
+import HIconList from "../IconList/HIconList";
+import VIconList from "../IconList/VIconList";
+import MobileHeading from "../MobileHeading";
+import ScrollButton from "../ScrollButton";
 
 const Splash = () => {
   const { colorMode } = useColorMode();
 
   return (
     <Grid
+      id="splash"
       templateAreas={{
         base: `"left"`,
         lg: `"left right"`,

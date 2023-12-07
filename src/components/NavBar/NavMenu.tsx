@@ -6,7 +6,8 @@ import {
   MenuItem,
   MenuList,
 } from "@chakra-ui/react";
-import { navMenuItems } from "../../services/nav-menu-options";
+import { navItems } from "../../services/nav-menu-options";
+import SmoothScroll from "../SmoothScroll";
 
 const NavMenu = () => {
   return (
@@ -18,10 +19,14 @@ const NavMenu = () => {
         variant="outline"
       />
       <MenuList>
-        {navMenuItems.map((menuItem) => (
-          <MenuItem key={menuItem} onClick={() => console.log(menuItem)}>
-            {menuItem}
-          </MenuItem>
+        {navItems.map((navItem) => (
+          <SmoothScroll
+            key={navItem.title}
+            to={navItem.for}
+            offset={navItem.offset}
+          >
+            <MenuItem>{navItem.title}</MenuItem>
+          </SmoothScroll>
         ))}
       </MenuList>
     </Menu>

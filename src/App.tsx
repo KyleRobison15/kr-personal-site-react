@@ -1,9 +1,11 @@
 import { Grid, GridItem, Hide, Show } from "@chakra-ui/react";
 import "./App.css";
-import Splash from "./components/Splash";
-import AboutMe from "./components/AboutMe";
+import Splash from "./components/Pages/Splash";
+import AboutMe from "./components/Pages/AboutMe";
 import NavBarMobile from "./components/NavBar/NavBarMobile";
 import NavBar from "./components/NavBar/NavBar";
+import Skills from "./components/Pages/Skills";
+import Portfolio from "./components/Pages/Portfolio";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <GridItem area="main">
         <Splash />
         <AboutMe />
+        <Portfolio />
+        <Skills />
       </GridItem>
     </Grid>
   );

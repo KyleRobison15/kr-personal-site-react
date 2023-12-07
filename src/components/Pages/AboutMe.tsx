@@ -1,5 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
-import { textSizes } from "../services/typography-breakpoints";
+import { textSizes } from "../../services/typography-breakpoints";
 
 const AboutMe = () => {
   return (

@@ -1,5 +1,9 @@
-export const navMenuItems = ["About", "Skills", "Portfolio", "Resume", "Blog"];
 export const navItems = [
+  {
+    title: "Home",
+    for: "splash",
+    offset: -70,
+  },
   {
     title: "About",
     for: "aboutme",
@@ -18,11 +22,6 @@ export const navItems = [
   {
     title: "Resume",
     for: "resume",
-    offset: -70,
-  },
-  {
-    title: "Blog",
-    for: "blog",
     offset: -70,
   },
 ];

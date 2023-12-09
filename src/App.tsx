@@ -1,4 +1,4 @@
-import { Grid, GridItem, Hide, Show } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Hide, Show } from "@chakra-ui/react";
 import "./App.css";
 import Splash from "./components/Pages/Splash";
 import AboutMe from "./components/Pages/AboutMe";
@@ -20,9 +20,11 @@ function App() {
       </GridItem>
       <GridItem area="main">
         <Splash />
-        <AboutMe />
-        <Portfolio />
-        <Skills />
+        <Box px={["", "", "100px", "150px"]}>
+          <AboutMe />
+          <Skills />
+          <Portfolio />
+        </Box>
       </GridItem>
     </Grid>
   );

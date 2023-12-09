@@ -3,6 +3,7 @@ import darkLogo from "../../assets/KR_Logo_Dark.png";
 import lightLogo from "../../assets/KR_Logo_Light.png";
 import ColorModeSwitch from "../ColorModeSwitch";
 import NavMenu from "./NavMenu";
+import SmoothScroll from "../SmoothScroll";
 
 const NavBarMobile = () => {
   const { colorMode } = useColorMode();
@@ -18,10 +19,13 @@ const NavBarMobile = () => {
       justifyContent="space-between"
       bg={colorMode === "light" ? "gray.100" : "gray.900"}
     >
-      <Image
-        src={colorMode === "light" ? darkLogo : lightLogo}
-        boxSize="38px"
-      />
+      <SmoothScroll to={"splash"} offset={0}>
+        <Image
+          src={colorMode === "light" ? darkLogo : lightLogo}
+          boxSize="38px"
+          cursor="pointer"
+        />
+      </SmoothScroll>
       <ColorModeSwitch />
       <NavMenu />
     </HStack>

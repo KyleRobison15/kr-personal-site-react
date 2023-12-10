@@ -1,9 +1,10 @@
-import { Box, HStack, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 import { sectionHeadingSizes } from "../../services/typography-breakpoints";
 import SkillsGrid from "../SkillsGrid";
 import useSkills from "../../hooks/useSkills";
 import CategorySelector from "../CategorySelector";
 import { useState } from "react";
+import SearchInput from "../SearchInput";
 
 const Skills = () => {
   const skills = useSkills();
@@ -23,12 +24,16 @@ const Skills = () => {
           ? "My Skills"
           : `My ${selectedCategory} Skills`}
       </Text>
-      <HStack px="12px">
+      <Flex px="12px" flexWrap="wrap" gap={2}>
         <CategorySelector
           selectedCategory={selectedCategory}
           onSelectCategory={(category) => setSelectedCategory(category)}
         />
-      </HStack>
+        <SearchInput
+          onSearch={(value) => console.log(value)}
+          selectedCategory={selectedCategory}
+        />
+      </Flex>
       <SkillsGrid
         skills={selectedCategory === "All Skills" ? skills : filteredSkills}
       />

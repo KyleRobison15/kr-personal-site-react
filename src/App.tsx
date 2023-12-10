@@ -20,7 +20,7 @@ function App() {
       </GridItem>
       <GridItem area="main">
         <Splash />
-        <Box px={["", "", "100px", "150px"]}>
+        <Box px={["", "", "75px"]}>
           <AboutMe />
           <Skills />
           <Portfolio />

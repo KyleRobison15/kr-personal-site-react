@@ -27,7 +27,7 @@ const Splash = () => {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "45% 55%",
+        lg: "40% 60%",
       }}
     >
       <GridItem

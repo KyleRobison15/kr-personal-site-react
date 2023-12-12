@@ -18,7 +18,8 @@ const NavBar = () => {
       h="70px"
       p="10px 20px"
       justifyContent="space-between"
-      bg={colorMode === "light" ? "gray.100" : "gray.900"}
+      bg={colorMode === "light" ? "gray.50" : "gray.900"}
+      shadow="sm"
     >
       <SmoothScroll to={"splash"} offset={0}>
         <Image

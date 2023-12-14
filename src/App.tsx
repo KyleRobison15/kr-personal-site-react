@@ -4,8 +4,7 @@ import Splash from "./components/Pages/Splash";
 import AboutMe from "./components/Pages/AboutMe";
 import NavBarMobile from "./components/NavBar/NavBarMobile";
 import NavBar from "./components/NavBar/NavBar";
-import Skills from "./components/Pages/Skills";
-import Portfolio from "./components/Pages/Portfolio";
+import SectionTabs from "./components/SectionTabs";
 
 function App() {
   return (
@@ -20,10 +19,9 @@ function App() {
       </GridItem>
       <GridItem area="main">
         <Splash />
-        <Box px={["", "", "75px"]}>
+        <Box px={["", "", "75px"]} py="75px">
           <AboutMe />
-          <Skills />
-          <Portfolio />
+          <SectionTabs />
         </Box>
       </GridItem>
     </Grid>

@@ -7,21 +7,21 @@ export const navItems = [
   {
     title: "About",
     for: "aboutme",
-    offset: -70,
+    offset: -145,
   },
   {
     title: "Skills",
-    for: "skills",
+    for: "tabs",
     offset: -70,
   },
   {
     title: "Portfolio",
-    for: "portfolio",
+    for: "tabs",
     offset: -70,
   },
   {
     title: "Resume",
-    for: "resume",
+    for: "tabs",
     offset: -70,
   },
 ];

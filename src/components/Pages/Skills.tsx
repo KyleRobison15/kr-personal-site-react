@@ -1,4 +1,4 @@
-import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { sectionHeadingSizes } from "../../services/typography-breakpoints";
 import SkillsGrid from "../SkillsGrid";
 import useSkills from "../../hooks/useSkills";
@@ -11,8 +11,6 @@ const Skills = () => {
 
   const [selectedCategory, setSelectedCategory] = useState("All Skills");
   const [searchString, setSearchString] = useState("");
-
-  const bg = useColorModeValue("gray.50", "gray.900");
 
   const filterSkills = () => {
     const filteredSkills = [...skills];
@@ -35,7 +33,7 @@ const Skills = () => {
   };
 
   return (
-    <Box w="100%" p="50px" id="skills" bg={bg} borderRadius={10} shadow="lg">
+    <>
       <Text fontSize={sectionHeadingSizes} textAlign="center" pb={5}>
         {selectedCategory === "All Skills"
           ? "My Skills"
@@ -60,7 +58,7 @@ const Skills = () => {
       ) : (
         <SkillsGrid skills={filterSkills()} />
       )}
-    </Box>
+    </>
   );
 };
 

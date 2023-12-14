@@ -6,14 +6,18 @@ import { ReactNode } from "react";
 // We can then take the child components and do things with them, in this case wrapping them in a simple styled container
 interface Props {
   children: ReactNode;
+  borderRadius?: string;
+  overflow?: string;
 }
 
-const SkillCardContainer = ({ children }: Props) => {
+const CardContainer = ({ children, borderRadius, overflow }: Props) => {
   return (
     // Here we use the generic "Box" component from Chakra UI which is just Chakra's version of a <div>
     // Doing it this way, gives us access to Chakra's style props
-    <Box width="100%">{children}</Box>
+    <Box width="100%" borderRadius={borderRadius} overflow={overflow}>
+      {children}
+    </Box>
   );
 };
 
-export default SkillCardContainer;
+export default CardContainer;

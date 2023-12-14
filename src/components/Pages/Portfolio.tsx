@@ -1,12 +1,28 @@
-import { Box, Text } from "@chakra-ui/react";
-import { textSizes } from "../../services/typography-breakpoints";
+import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import { sectionHeadingSizes } from "../../services/typography-breakpoints";
+import ProjectsGrid from "../ProjectsGrid";
+import useProjects from "../../hooks/useProjects";
 
 const Portfolio = () => {
+  const projects = useProjects();
+
+  const bg = useColorModeValue("gray.50", "gray.900");
+
   return (
-    <Box h="2000px" w="100%" pt={8} pb={8} id="portfolio">
-      <Text fontSize={textSizes} textAlign="center">
-        Portfolio
+    <Box
+      w="100%"
+      h="1000px"
+      p="50px"
+      my="100px"
+      id="portfolio"
+      bg={bg}
+      borderRadius={10}
+      shadow="lg"
+    >
+      <Text fontSize={sectionHeadingSizes} textAlign="center" pb={5}>
+        My Portfolio
       </Text>
+      <ProjectsGrid projects={projects} />
     </Box>
   );
 };

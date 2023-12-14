@@ -29,7 +29,7 @@ const SkillCard = ({ skill }: Props) => {
   const cardHeaderBg = useColorModeValue("gray.100", "gray.900");
 
   return (
-    <Card p={3} bg={cardBg} boxShadow="md" borderRadius={10}>
+    <Card p={3} bg={cardBg} variant="outline" boxShadow="md" borderRadius={10}>
       <CardHeader
         display="flex"
         flexDir="column"

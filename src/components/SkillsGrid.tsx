@@ -1,5 +1,5 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import SkillCardContainer from "./SkillCardContainer";
+import CardContainer from "./CardContainer";
 import SkillCard from "./SkillCard";
 import { Skill } from "../hooks/useSkills";
 
@@ -16,9 +16,9 @@ const SkillsGrid = ({ skills }: Props) => {
       w="100%"
     >
       {skills.map((skill) => (
-        <SkillCardContainer key={skill.name}>
+        <CardContainer key={skill.name}>
           <SkillCard skill={skill} />
-        </SkillCardContainer>
+        </CardContainer>
       ))}
     </SimpleGrid>
   );

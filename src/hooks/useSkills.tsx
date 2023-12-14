@@ -29,6 +29,7 @@ import {
   SiIntellijidea,
   SiEclipseide,
   SiGradle,
+  SiAngular,
 } from "react-icons/si";
 import { AiFillApi } from "react-icons/ai";
 import { GrMysql } from "react-icons/gr";
@@ -44,6 +45,21 @@ export interface Skill {
   yearsExperience: string;
   text: string;
 }
+
+export const skillsIconMap: { [key: string]: IconType } = {
+  java: FaJava,
+  javascript: SiJavascript,
+  typescript: SiTypescript,
+  react: SiReact,
+  angular: SiAngular,
+  mongodb: SiMongodb,
+  mysql: GrMysql,
+  spring: SiSpring,
+  html: SiHtml5,
+  css: SiCss3,
+  bootstrap: SiBootstrap,
+  chakraui: SiChakraui,
+};
 
 const skills = [
   {

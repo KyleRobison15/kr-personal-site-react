@@ -43,8 +43,8 @@ const ProjectCard = ({ project }: Props) => {
           Show {show ? "less..." : "more..."}
         </Button>
         <Image
-          objectFit="cover"
           h="300px"
+          w="100%"
           src={project.image}
           alt={`${project.label} Image`}
           borderRadius={4}

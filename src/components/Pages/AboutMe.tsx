@@ -40,6 +40,7 @@ const AboutMe = () => {
     "React",
     "Typescript",
     "CSS",
+    "I’d love the chance to earn a spot on your team!",
   ];
 
   return (

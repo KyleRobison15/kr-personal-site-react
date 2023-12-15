@@ -1,4 +1,4 @@
-import flyboxImage from "../assets/project-photos/Flybox.jpg";
+import flyboxImage from "../assets/project-photos/shutterstock_2057047280.png";
 import gamehubImage from "../assets/project-photos/Gamehub.avif";
 
 export interface Project {

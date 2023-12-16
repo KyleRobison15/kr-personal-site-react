@@ -41,7 +41,7 @@ const Splash = () => {
       >
         <Image
           src={headShot}
-          w="525px"
+          w={["450px", "525px"]}
           h="65%"
           objectFit="cover"
           pos="absolute"

@@ -28,7 +28,7 @@ function App() {
           <NavBar onNavChange={(index) => handleNavChange(index)} />
         </Hide>
       </GridItem>
-      <GridItem area="main">
+      <GridItem area="main" minH="2425px">
         <Splash />
         <Box px={["", "", "75px"]} py="75px">
           <AboutMe />

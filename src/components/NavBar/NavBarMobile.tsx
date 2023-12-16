@@ -6,7 +6,7 @@ import NavMenu from "./NavMenu";
 import SmoothScroll from "../SmoothScroll";
 
 interface Props {
-  onNavChange: (tabIndex: number) => void;
+  onNavChange: (tabIndex: number | null) => void;
 }
 
 const NavBarMobile = ({ onNavChange }: Props) => {

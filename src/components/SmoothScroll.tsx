@@ -5,7 +5,7 @@ interface Props {
   children: ReactNode | string;
   to: string;
   offset: number;
-  onNavChange: () => void;
+  onNavChange?: () => void;
 }
 
 const SmoothScroll = ({ children, to, offset, onNavChange }: Props) => {

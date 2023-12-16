@@ -10,7 +10,7 @@ import { navItems } from "../../services/nav-menu-options";
 import SmoothScroll from "../SmoothScroll";
 
 interface Props {
-  onNavChange: (tabIndex: number) => void;
+  onNavChange: (tabIndex: number | null) => void;
 }
 
 const NavMenu = ({ onNavChange }: Props) => {

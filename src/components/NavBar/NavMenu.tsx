@@ -9,7 +9,11 @@ import {
 import { navItems } from "../../services/nav-menu-options";
 import SmoothScroll from "../SmoothScroll";
 
-const NavMenu = () => {
+interface Props {
+  onNavChange: (tabIndex: number) => void;
+}
+
+const NavMenu = ({ onNavChange }: Props) => {
   return (
     <Menu>
       <MenuButton
@@ -24,6 +28,7 @@ const NavMenu = () => {
             key={navItem.title}
             to={navItem.for}
             offset={navItem.offset}
+            onNavChange={() => onNavChange(navItem.tabIndex)}
           >
             <MenuItem>{navItem.title}</MenuItem>
           </SmoothScroll>

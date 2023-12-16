@@ -5,7 +5,11 @@ import ColorModeSwitch from "../ColorModeSwitch";
 import NavMenu from "./NavMenu";
 import SmoothScroll from "../SmoothScroll";
 
-const NavBarMobile = () => {
+interface Props {
+  onNavChange: (tabIndex: number) => void;
+}
+
+const NavBarMobile = ({ onNavChange }: Props) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -19,7 +23,7 @@ const NavBarMobile = () => {
       justifyContent="space-between"
       bg={colorMode === "light" ? "gray.100" : "gray.900"}
     >
-      <SmoothScroll to={"splash"} offset={0}>
+      <SmoothScroll to={"splash"} offset={0} onNavChange={() => onNavChange(0)}>
         <Image
           src={colorMode === "light" ? darkLogo : lightLogo}
           boxSize="38px"
@@ -27,7 +31,7 @@ const NavBarMobile = () => {
         />
       </SmoothScroll>
       <ColorModeSwitch />
-      <NavMenu />
+      <NavMenu onNavChange={onNavChange} />
     </HStack>
   );
 };

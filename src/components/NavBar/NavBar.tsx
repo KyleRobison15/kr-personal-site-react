@@ -5,7 +5,11 @@ import ColorModeSwitch from "../ColorModeSwitch";
 import SmoothScroll from "../SmoothScroll";
 import { navItems } from "../../services/nav-menu-options";
 
-const NavBar = () => {
+interface Props {
+  onNavChange: (tabIndex: number) => void;
+}
+
+const NavBar = ({ onNavChange }: Props) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -21,7 +25,7 @@ const NavBar = () => {
       bg={colorMode === "light" ? "gray.50" : "gray.900"}
       shadow="sm"
     >
-      <SmoothScroll to={"splash"} offset={0}>
+      <SmoothScroll to={"splash"} offset={0} onNavChange={() => onNavChange(0)}>
         <Image
           src={colorMode === "light" ? darkLogo : lightLogo}
           boxSize="38px"
@@ -33,6 +37,7 @@ const NavBar = () => {
           key={navItem.title}
           to={navItem.for}
           offset={navItem.offset}
+          onNavChange={() => onNavChange(navItem.tabIndex)}
         >
           <Button variant="link">{navItem.title}</Button>
         </SmoothScroll>

@@ -5,23 +5,30 @@ import AboutMe from "./components/Pages/AboutMe";
 import NavBarMobile from "./components/NavBar/NavBarMobile";
 import NavBar from "./components/NavBar/NavBar";
 import SectionTabs from "./components/SectionTabs";
+import { useState } from "react";
 
 function App() {
+  const [tabIndex, setTabIndex] = useState(0);
+
+  const handleNavChange = (index: number) => {
+    setTabIndex(index);
+  };
+
   return (
     <Grid gridTemplateAreas={`"nav" "main"`} gridTemplateColumns={`"1fr"`}>
       <GridItem area="nav">
         <Show below="md">
-          <NavBarMobile />
+          <NavBarMobile onNavChange={(index) => handleNavChange(index)} />
         </Show>
         <Hide below="md">
-          <NavBar />
+          <NavBar onNavChange={(index) => handleNavChange(index)} />
         </Hide>
       </GridItem>
       <GridItem area="main">
         <Splash />
         <Box px={["", "", "75px"]} py="75px">
           <AboutMe />
-          <SectionTabs />
+          <SectionTabs tabIndex={tabIndex} />
         </Box>
       </GridItem>
     </Grid>

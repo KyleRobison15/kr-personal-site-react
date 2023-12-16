@@ -5,11 +5,19 @@ interface Props {
   children: ReactNode | string;
   to: string;
   offset: number;
+  onNavChange: () => void;
 }
 
-const SmoothScroll = ({ children, to, offset }: Props) => {
+const SmoothScroll = ({ children, to, offset, onNavChange }: Props) => {
   return (
-    <ScrollLink to={to} spy={true} smooth={true} offset={offset} duration={40}>
+    <ScrollLink
+      to={to}
+      spy={true}
+      smooth={true}
+      offset={offset}
+      duration={40}
+      onClick={onNavChange}
+    >
       {children}
     </ScrollLink>
   );

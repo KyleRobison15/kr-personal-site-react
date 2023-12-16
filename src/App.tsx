@@ -10,8 +10,12 @@ import { useState } from "react";
 function App() {
   const [tabIndex, setTabIndex] = useState(0);
 
-  const handleNavChange = (index: number) => {
-    setTabIndex(index);
+  const handleNavChange = (index: number | null) => {
+    if (index === null) {
+      return;
+    } else {
+      setTabIndex(index);
+    }
   };
 
   return (

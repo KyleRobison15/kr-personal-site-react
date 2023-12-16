@@ -3,13 +3,13 @@ export const navItems = [
     title: "Home",
     for: "splash",
     offset: -70,
-    tabIndex: 0,
+    tabIndex: null,
   },
   {
     title: "About",
     for: "aboutme",
     offset: -145,
-    tabIndex: 0,
+    tabIndex: null,
   },
   {
     title: "Portfolio",

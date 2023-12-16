@@ -8,13 +8,21 @@ interface Props {
   offset: number;
   lightBg: string;
   darkBg: string;
+  onNavChange: (tabIndex: number) => void;
 }
 
-const ScrollButton = ({ text, to, offset, lightBg, darkBg }: Props) => {
+const ScrollButton = ({
+  text,
+  to,
+  offset,
+  lightBg,
+  darkBg,
+  onNavChange,
+}: Props) => {
   const { colorMode } = useColorMode();
 
   return (
-    <SmoothScroll to={to} offset={offset}>
+    <SmoothScroll to={to} offset={offset} onNavChange={() => onNavChange}>
       <Button
         h="75px"
         display="flex"

@@ -63,7 +63,7 @@ const AboutMe = () => {
         my="15px"
         fontSize={paragraphSizes}
         textAlign="center"
-        lineHeight="40px"
+        lineHeight={["40px", "40px", "60px"]}
       >
         <Highlight
           query={highlightArray}

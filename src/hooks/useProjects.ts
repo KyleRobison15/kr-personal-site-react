@@ -1,6 +1,6 @@
-import flyboxImage from "../assets/project-photos/FlyBox3.png";
+import flyboxImage from "../assets/project-photos/FlyBox.jpg";
 import gamehubImage from "../assets/project-photos/Gamehub.avif";
-import letsClimbImage from "../assets/project-photos/Lets_Climb.png";
+import letsClimbImage from "../assets/project-photos/LetsClimb.jpg";
 
 export interface Project {
   name: string;

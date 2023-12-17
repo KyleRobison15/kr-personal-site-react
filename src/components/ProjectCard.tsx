@@ -12,6 +12,7 @@ import {
   Collapse,
   Link,
   Box,
+  AspectRatio,
 } from "@chakra-ui/react";
 import { Project } from "../hooks/useProjects";
 import { SiGithub } from "react-icons/si";
@@ -43,13 +44,13 @@ const ProjectCard = ({ project }: Props) => {
         <Button my={3} variant="link" onClick={() => setShow(!show)}>
           Show {show ? "less..." : "more..."}
         </Button>
-        <Image
-          maxH="290px"
-          w="100%"
-          src={project.image}
-          alt={`${project.label} Image`}
-          borderRadius={4}
-        />
+        <AspectRatio ratio={3 / 2}>
+          <Image
+            src={project.image}
+            alt={`${project.label} Image`}
+            borderRadius={4}
+          />
+        </AspectRatio>
       </CardBody>
       <CardFooter
         justify="space-between"

@@ -1,10 +1,10 @@
 import { Flex, Text } from "@chakra-ui/react";
-import { sectionHeadingSizes } from "../../services/typography-breakpoints";
 import SkillsGrid from "../SkillsGrid";
-import useSkills from "../../hooks/useSkills";
+import useSkills, { skillCategories } from "../../hooks/useSkills";
 import CategorySelector from "../CategorySelector";
 import { useState } from "react";
 import SearchInput from "../SearchInput";
+import GridHeading from "../GridHeading";
 
 const Skills = () => {
   const skills = useSkills();
@@ -34,15 +34,16 @@ const Skills = () => {
 
   return (
     <>
-      <Text fontSize={sectionHeadingSizes} textAlign="center" pb={5}>
-        {selectedCategory === "All Skills"
-          ? "My Skills"
-          : `My ${selectedCategory} Skills`}
-      </Text>
+      <GridHeading
+        heading={"Skills"}
+        selectedCategory={selectedCategory}
+        defaultCategory={"All Skills"}
+      />
       <Flex px="12px" flexWrap="wrap" gap={2}>
         <CategorySelector
           selectedCategory={selectedCategory}
           onSelectCategory={(category) => setSelectedCategory(category)}
+          categories={skillCategories}
         />
         <SearchInput
           onChange={(value) => setSearchString(value)}

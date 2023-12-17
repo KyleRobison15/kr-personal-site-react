@@ -11,6 +11,7 @@ import {
   Heading,
   Collapse,
   Link,
+  Box,
 } from "@chakra-ui/react";
 import { Project } from "../hooks/useProjects";
 import { SiGithub } from "react-icons/si";
@@ -32,7 +33,7 @@ const ProjectCard = ({ project }: Props) => {
           <Heading size={["md", "lg"]}>
             <Link href={project.projectUrl}>{project.label}</Link>
           </Heading>
-          <SkillsIconList skills={project.skills} />
+          <SkillsIconList skillLabels={project.skills} />
         </Flex>
       </CardHeader>
       <CardBody>
@@ -43,7 +44,7 @@ const ProjectCard = ({ project }: Props) => {
           Show {show ? "less..." : "more..."}
         </Button>
         <Image
-          h="300px"
+          maxH="290px"
           w="100%"
           src={project.image}
           alt={`${project.label} Image`}
@@ -59,16 +60,37 @@ const ProjectCard = ({ project }: Props) => {
           },
         }}
       >
-        <Button flex="1" variant="ghost" leftIcon={<LinkIcon boxSize="20px" />}>
-          See the project
-        </Button>
-        <Button
+        <Box
+          as={Link}
+          href={project.projectUrl}
           flex="1"
-          variant="ghost"
-          leftIcon={<Icon as={SiGithub} boxSize="22px" />}
+          display="flex"
+          justifyContent="center"
         >
-          See the code
-        </Button>
+          <Button
+            flex="1"
+            variant="ghost"
+            leftIcon={<LinkIcon boxSize="20px" />}
+          >
+            See the project
+          </Button>
+        </Box>
+        <Box
+          as={Link}
+          href={project.gitHubUrl}
+          flex="1"
+          display="flex"
+          justifyContent="center"
+          textDecor="none"
+        >
+          <Button
+            flex="1"
+            variant="ghost"
+            leftIcon={<Icon as={SiGithub} boxSize="22px" />}
+          >
+            See the code
+          </Button>
+        </Box>
       </CardFooter>
     </Card>
   );

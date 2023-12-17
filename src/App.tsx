@@ -30,7 +30,7 @@ function App() {
       </GridItem>
       <GridItem area="main" minH="2425px">
         <Splash />
-        <Box px={["", "", "75px"]} py="75px">
+        <Box px={["", "", "75px"]} pb="75px">
           <AboutMe />
           <SectionTabs tabIndex={tabIndex} />
         </Box>

@@ -60,6 +60,7 @@ const ProjectCard = ({ project }: Props) => {
             minW: "136px",
           },
         }}
+        pt={1}
       >
         <Box
           as={Link}

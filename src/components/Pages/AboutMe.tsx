@@ -44,7 +44,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <Flex w="100%" mb="100px" id="aboutme" flexDir="column" alignItems="center">
+    <Flex w="100%" my="125px" id="aboutme" flexDir="column" alignItems="center">
       <HStack>
         <Image
           src={waveEmoji}

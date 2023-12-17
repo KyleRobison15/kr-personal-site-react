@@ -4,7 +4,7 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const VIconList = () => {
   return (
-    <VStack gap="65px" pos="absolute" bottom="0" right="8%" mb={7}>
+    <VStack gap={["50px", "60px"]} pos="absolute" bottom="0" right="8%" mb={7}>
       <Link href="https://github.com/KyleRobison15" isExternal>
         <Icon as={BsGithub} boxSize={["32px", "40px"]} />
       </Link>

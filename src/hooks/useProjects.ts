@@ -58,8 +58,9 @@ const projects: Project[] = [
     image: letsClimbImage,
     description:
       "Let's Climb is a full stack, dynamic web application built using Java, Spring, MySQL and React. I designed the REST API and database schema myself. Users can view or add information about specific rock climbs, as well as update or delete that information from a database. It is intended to be used as a way of keeping track of climbs the user has done, and climbs the user would like to do in the future.",
-    projectUrl: "https://github.com/KyleRobison15/JPACRUDProject",
-    gitHubUrl: "https://github.com/KyleRobison15/JPACRUDProject",
+    projectUrl: "http://167.172.208.26:31276/swagger-ui/index.html",
+    gitHubUrl:
+      "https://github.com/KyleRobison15/krd-lets-climb-rest#welcome-to-krd-lets-climb-rest",
   },
 ];
 

@@ -1,6 +1,7 @@
 import flyboxImage from "../assets/project-photos/FlyBox.jpg";
 import gamehubImage from "../assets/project-photos/Gamehub.avif";
 import letsClimbImage from "../assets/project-photos/LetsClimb.jpg";
+import draImage from "../assets/project-photos/dra-image.jpeg";
 
 export interface Project {
   name: string;
@@ -30,7 +31,8 @@ const projects: Project[] = [
     description:
       "Experienced fly fisherman can often tie hundreds of different fly patterns, and remembering the materials and techniques for each one can be difficult. Flybox is a utility app that aims to solve this issue. Users can make an account to create and manage fly tying recipes by adding them to their virtual flybox.",
     projectUrl: "https://github.com/KyleRobison15/flybox-react",
-    gitHubUrl: "https://github.com/KyleRobison15/flybox-react",
+    gitHubUrl:
+      "https://github.com/KyleRobison15/flybox-react/blob/master/README.md",
   },
   {
     name: "game-hub",
@@ -40,7 +42,7 @@ const projects: Project[] = [
     description:
       "GameHub is a simple, yet elegant web application for browsing video games. It is powered by a third party API from RAWG.io which is the largest video game database and game discovery service available. Since the API is free to use and the backend was already in place, I was able to focus all my energy on honing in my front end development skills with React.",
     projectUrl: "https://game-hub-kyle-robison.vercel.app/",
-    gitHubUrl: "https://github.com/KyleRobison15/game-hub",
+    gitHubUrl: "https://github.com/KyleRobison15/game-hub/blob/main/README.md",
   },
   {
     name: "lets-climb",
@@ -60,7 +62,18 @@ const projects: Project[] = [
       "Let's Climb is a full stack, dynamic web application built using Java, Spring, MySQL and React. I designed the REST API and database schema myself. Users can view or add information about specific rock climbs, as well as update or delete that information from a database. It is intended to be used as a way of keeping track of climbs the user has done, and climbs the user would like to do in the future.",
     projectUrl: "http://167.172.208.26:31276/swagger-ui/index.html",
     gitHubUrl:
-      "https://github.com/KyleRobison15/krd-lets-climb-rest#welcome-to-krd-lets-climb-rest",
+      "https://github.com/KyleRobison15/krd-lets-climb-rest/blob/main/README.md",
+  },
+  {
+    name: "drive-right-academy",
+    label: "Drive Right Academy",
+    skills: ["Typescript", "React", "HTML", "CSS", "Chakra UI"],
+    image: draImage,
+    description:
+      "For this project, I partnered with Drive Right Academy, a driver's education company in Colorado Springs, to replace their outdated website with a new, simple and modern one. In less than two weeks, I was able to deliver a mobile-friendly, modern and simple website with the goal of improving their 'click-to-call' engagement from prospective students. Additionally, I worked with the company who created Drive Right Academy's old website in order to transfer the driverightacademy.com domain to the new host. The client was thrilled with the result and thanked me for my professionalism throughout the process.",
+    projectUrl: "https://drive-right-academy.vercel.app",
+    gitHubUrl:
+      "https://github.com/KyleRobison15/drive-right-academy/blob/main/README.md",
   },
 ];
 

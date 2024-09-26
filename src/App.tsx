@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, GridItem, Hide, Show } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Hide, Show } from "@chakra-ui/react";
 import "./App.css";
 import Splash from "./components/Pages/Splash";
 import AboutMe from "./components/Pages/AboutMe";

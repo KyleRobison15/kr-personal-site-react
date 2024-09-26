@@ -25,7 +25,6 @@ const SectionTabs = ({ tabIndex }: Props) => {
         variant="line"
         w="100%"
         size={["md", "lg"]}
-        mb="100px"
         id="tabs"
         bg={bg}
         borderRadius={10}

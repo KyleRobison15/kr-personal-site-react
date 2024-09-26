@@ -44,14 +44,14 @@ const SkillCard = ({ skill }: Props) => {
         </Heading>
       </CardHeader>
       <CardBody>
-        <Button mb={2} onClick={onToggle} variant="link">
-          {isOpen ? "See less..." : "See more..."}
-        </Button>
-        <Collapse in={isOpen} animateOpacity>
+        <Collapse startingHeight={172} in={isOpen} animateOpacity>
           <Text m={0} fontSize={cardTextSizes}>
             {skill.text}
           </Text>
         </Collapse>
+        <Button mb={2} onClick={onToggle} variant="link">
+          {isOpen ? "See less..." : "See more..."}
+        </Button>
       </CardBody>
       <CardFooter display="flex" justifyContent="space-between" flexWrap="wrap">
         <Text m={0} fontSize={cardTextSizes} fontWeight="bold">

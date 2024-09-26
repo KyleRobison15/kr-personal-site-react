@@ -60,6 +60,7 @@ export const skillsIconMap: { [key: string]: IconType } = {
   css: SiCss3,
   bootstrap: SiBootstrap,
   chakraui: SiChakraui,
+  kubernetes: SiKubernetes,
 };
 
 const skills = [
@@ -178,7 +179,7 @@ const skills = [
     icon: SiKubernetes,
     categories: ["CI/CD", "Containerization"],
     yearsExperience: "2 yrs",
-    isProjectSkill: false,
+    isProjectSkill: true,
     text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
   },
   {

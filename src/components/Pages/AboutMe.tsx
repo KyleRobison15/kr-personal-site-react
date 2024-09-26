@@ -36,7 +36,6 @@ const AboutMe = () => {
     "MongoDB",
     "relational databases",
     "MySQL",
-    "DB2",
     "React",
     "Typescript",
     "CSS",
@@ -76,18 +75,18 @@ const AboutMe = () => {
             color: fontColor,
           }}
         >
-          I’m a software engineer with over two years of experience building
+          I'm a software engineer with over two years of experience building
           modern full stack web applications. I specialize in developing RESTful
           web services using Java and Spring and have experience with both
           NoSQL, document-based databases like MongoDB and more traditional
-          relational databases like MySQL and IBM's DB2. On the front end, I
-          excel at building dynamic user interfaces with React, Javascript and
-          Typescript, and I make them shine with sound CSS fundamentals. My
-          experience encapsulates the entire software development lifecycle and
-          showcases a commitment to producing innovative and reliable solutions
-          for the end user. I love what I do, and I’m always open to new
-          opportunities, so if you’re working on something cool and need a
-          passionate developer, I’d love the chance to earn a spot on your team!
+          relational databases like MySQL. On the front end, I excel at building
+          dynamic user interfaces with React, Javascript and Typescript, and I
+          make them shine with sound CSS fundamentals. My experience
+          encapsulates the entire software development lifecycle and showcases a
+          commitment to producing innovative and reliable solutions for the end
+          user. I love what I do, and I'm always open to new opportunities, so
+          if you're working on something cool and need a passionate developer,
+          I'd love the chance to earn a spot on your team!
         </Highlight>
       </Text>
     </Flex>

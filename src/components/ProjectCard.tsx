@@ -38,7 +38,7 @@ const ProjectCard = ({ project }: Props) => {
         </Flex>
       </CardHeader>
       <CardBody>
-        <Collapse startingHeight={100} in={show}>
+        <Collapse startingHeight={148} in={show}>
           <Text pl={1}>{project.description}</Text>
         </Collapse>
         <Button my={3} variant="link" onClick={() => setShow(!show)}>

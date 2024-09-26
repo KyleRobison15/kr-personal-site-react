@@ -1,4 +1,4 @@
-import { HStack, Icon, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Icon, useColorModeValue } from "@chakra-ui/react";
 import { skillsIconMap, mapLabelsToNames } from "../hooks/useSkills";
 
 interface Props {
@@ -11,16 +11,16 @@ const SkillsIconList = ({ skillLabels }: Props) => {
   const skillNames = mapLabelsToNames(skillLabels);
 
   return (
-    <HStack marginY={2}>
+    <Flex flexWrap="wrap" marginY={2} gap={1}>
       {skillNames.map((skill) => (
         <Icon
           key={skill}
           as={skillsIconMap[skill]}
-          boxSize={[6, 6, 7]}
+          boxSize={[5, 5, 6]}
           color={color}
         />
       ))}
-    </HStack>
+    </Flex>
   );
 };
 

@@ -1,4 +1,4 @@
-import flyboxImage from "../assets/project-photos/FlyBox.jpg";
+import flyboxImage from "../assets/project-photos/PortfolioSite.jpg";
 import gamehubImage from "../assets/project-photos/Gamehub.avif";
 import letsClimbImage from "../assets/project-photos/LetsClimb.jpg";
 import draImage from "../assets/project-photos/dra-image.jpeg";
@@ -46,7 +46,7 @@ const projects: Project[] = [
     image: draImage,
     description:
       "For this project, I partnered with Drive Right Academy, a driver's education company in Colorado Springs, to replace their outdated website with a new, simple and modern one. In less than two weeks, I was able to deliver a mobile-friendly, modern and simple website with the goal of improving their 'click-to-call' engagement from prospective students. Additionally, I worked with the company who created Drive Right Academy's old website in order to transfer the driverightacademy.com domain to the new host. The client was thrilled with the result and thanked me for my professionalism throughout the process.",
-    projectUrl: "https://drive-right-academy.vercel.app",
+    projectUrl: "https://driverightacademy.com",
     gitHubUrl:
       "https://github.com/KyleRobison15/drive-right-academy/blob/main/README.md",
   },

@@ -8,7 +8,7 @@ export const navItems = [
   {
     title: "About",
     for: "aboutme",
-    offset: -180,
+    offset: -100,
     tabIndex: null,
   },
   {
@@ -22,11 +22,5 @@ export const navItems = [
     for: "tabs",
     offset: -85,
     tabIndex: 1,
-  },
-  {
-    title: "Resume",
-    for: "tabs",
-    offset: -85,
-    tabIndex: 2,
   },
 ];

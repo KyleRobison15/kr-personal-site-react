@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Skills from "./Pages/Skills";
 import Portfolio from "./Pages/Portfolio";
-import Resume from "./Pages/Resume";
+import Contact from "./Pages/Contact";
 
 interface Props {
   tabIndex: number;
@@ -44,7 +44,7 @@ const SectionTabs = ({ tabIndex }: Props) => {
             <Skills />
           </TabPanel>
           <TabPanel>
-            <Resume />
+            <Contact />
           </TabPanel>
         </TabPanels>
       </Tabs>

@@ -5,12 +5,14 @@ import {
   Image,
   Highlight,
   useColorModeValue,
-} from "@chakra-ui/react";
+  Link as ChakraLink,
+  Button} from "@chakra-ui/react";
 import waveEmoji from "../../assets/wave.png";
 import {
   paragraphSizes,
   sectionHeadingSizes,
 } from "../../services/typography-breakpoints";
+import { IoDocumentText } from "react-icons/io5";
 
 const AboutMe = () => {
   /**
@@ -89,6 +91,18 @@ const AboutMe = () => {
           I'd love the chance to earn a spot on your team!
         </Highlight>
       </Text>
+      <ChakraLink href="https://bold.pro/my/kyle-robison">
+        <Button
+          aria-label="Call Us"
+          leftIcon={<IoDocumentText fontSize="20px" />}
+          size="lg"
+          variant="solid"
+          p="12px"
+          mt="20px"
+        >
+          View My Resume
+        </Button>
+      </ChakraLink>
     </Flex>
   );
 };

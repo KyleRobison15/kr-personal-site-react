@@ -63,6 +63,8 @@ export const skillsIconMap: { [key: string]: IconType } = {
   kubernetes: SiKubernetes,
 };
 
+const defaultDescription = "Whoops! I haven't had time to update my experience on this skill. Contact me to learn more about it!"
+
 const skills = [
   {
     name: "java",
@@ -143,7 +145,7 @@ const skills = [
     categories: ["Database"],
     yearsExperience: "2 yrs",
     isProjectSkill: true,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "mysql",
@@ -152,7 +154,7 @@ const skills = [
     categories: ["Database"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: true,
-    text: "",
+    text: defaultDescription,
   },
 
   {
@@ -162,7 +164,7 @@ const skills = [
     categories: ["Streams"],
     yearsExperience: "1 yr",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "gradle",
@@ -171,7 +173,7 @@ const skills = [
     categories: ["Dev Tools"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "kubernetes",
@@ -180,7 +182,7 @@ const skills = [
     categories: ["CI/CD", "Containerization"],
     yearsExperience: "2 yrs",
     isProjectSkill: true,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "docker",
@@ -189,7 +191,7 @@ const skills = [
     categories: ["CI/CD", "Containerization"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "helm",
@@ -198,7 +200,7 @@ const skills = [
     categories: ["CI/CD", "Containerization"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "jenkins",
@@ -207,7 +209,7 @@ const skills = [
     categories: ["CI/CD", "Dev Tools"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "chakraui",
@@ -216,7 +218,7 @@ const skills = [
     categories: ["Library", "Front End"],
     yearsExperience: "< 1 yr",
     isProjectSkill: true,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "bootstrap",
@@ -225,7 +227,7 @@ const skills = [
     categories: ["Library", "Front End"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: true,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "figma",
@@ -234,7 +236,7 @@ const skills = [
     categories: ["Dev Tools", "Front End"],
     yearsExperience: "< 1 yr",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "json",
@@ -243,7 +245,7 @@ const skills = [
     categories: ["API"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "postman",
@@ -252,7 +254,7 @@ const skills = [
     categories: ["Dev Tools", "API"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "swagger",
@@ -270,7 +272,7 @@ const skills = [
     categories: ["Dev Tools"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "git",
@@ -279,7 +281,7 @@ const skills = [
     categories: ["Dev Tools", "Version Control"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "github",
@@ -288,7 +290,7 @@ const skills = [
     categories: ["Dev Tools", "Version Control"],
     yearsExperience: "3 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "junit5",
@@ -297,7 +299,7 @@ const skills = [
     categories: ["Testing", "Library"],
     yearsExperience: "2.5 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "mockito",
@@ -306,7 +308,7 @@ const skills = [
     categories: ["Testing", "Library"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "jest",
@@ -315,7 +317,7 @@ const skills = [
     categories: ["Testing", "Library"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "react-testing-library",
@@ -324,7 +326,7 @@ const skills = [
     categories: ["Testing", "Library"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "agile",
@@ -333,7 +335,7 @@ const skills = [
     categories: ["Methodology"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "jira",
@@ -342,7 +344,7 @@ const skills = [
     categories: ["Methodology", "Dev Tools"],
     yearsExperience: "2 yrs",
     isProjectSkill: false,
-    text: "This is some sample text for a card to see what it looks like.  I want to describe my experience with each of these technologies so recruiters can clearly see how I use them.",
+    text: defaultDescription,
   },
   {
     name: "intellij",

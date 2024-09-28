@@ -79,7 +79,7 @@ const Splash = () => {
             <ScrollButton
               text={"About Me"}
               to={"aboutme"}
-              offset={-145}
+              offset={-100}
               lightBg={"gray.100"}
               darkBg={"gray.900"}
             />

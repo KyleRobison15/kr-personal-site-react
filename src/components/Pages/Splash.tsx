@@ -15,8 +15,6 @@ import VIconList from "../IconList/VIconList";
 import MobileHeading from "../MobileHeading";
 import ScrollButton from "../ScrollButton";
 import { navItems } from "../../services/nav-menu-options";
-import DaytimeMountains from "../../assets/DaytimeMountains.jpeg";
-import NightMountains from "../../assets/NIghtMountains.jpeg";
 
 interface Props {
   onNavChange: (tabIndex: number | null) => void;

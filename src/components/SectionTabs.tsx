@@ -19,7 +19,7 @@ const SectionTabs = ({ tabIndex }: Props) => {
   const bg = useColorModeValue("gray.50", "gray.900");
 
   return (
-    <Box bg={bg} px="50px">
+    <Box bg={bg} px="50px" pb="50px" minH="calc(100vh - 127px)">
       <Tabs
         isFitted
         variant="line"

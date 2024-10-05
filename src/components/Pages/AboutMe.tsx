@@ -91,7 +91,7 @@ const AboutMe = () => {
           I'd love the chance to earn a spot on your team!
         </Highlight>
       </Text>
-      <ChakraLink href="https://bold.pro/my/kyle-robison">
+      <ChakraLink href="https://bold.pro/my/kyle-robison" target="_blank">
         <Button
           aria-label="Call Us"
           leftIcon={<IoDocumentText fontSize="20px" />}

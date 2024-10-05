@@ -12,7 +12,7 @@ const ProjectsGrid = ({ projects }: Props) => {
     <SimpleGrid
       columns={{ base: 1, sm: 1, md: 1, lg: 2, xl: 3 }}
       padding="12px"
-      spacing={4}
+      spacing={6}
       w="100%"
     >
       {projects.map((project) => (

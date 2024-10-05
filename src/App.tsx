@@ -33,9 +33,9 @@ function App() {
             <NavBar onNavChange={(index) => handleNavChange(index)} />
           </Hide>
         </GridItem>
-        <GridItem area="main" minH="2425px">
-          <Splash />
-          <Box px={["", "", "75px"]} pb="75px">
+        <GridItem area="main">
+          <Splash onNavChange={(index) => handleNavChange(index)} />
+          <Box>
             <AboutMe />
             <SectionTabs tabIndex={tabIndex} />
           </Box>

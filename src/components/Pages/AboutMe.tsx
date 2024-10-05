@@ -41,11 +41,11 @@ const AboutMe = () => {
     "React",
     "Typescript",
     "CSS",
-    "I’d love the chance to earn a spot on your team!",
+    "I'd love the chance to earn a spot on your team!",
   ];
 
   return (
-    <Flex w="100%" my="125px" id="aboutme" flexDir="column" alignItems="center">
+    <Flex w="100%" minH="calc(100vh - 130px)" id="aboutme" flexDir="column" my="50px" justifyContent="center" alignItems="center" px={["","","75px"]}>
       <HStack>
         <Image
           src={waveEmoji}
@@ -98,7 +98,7 @@ const AboutMe = () => {
           size="lg"
           variant="solid"
           p="12px"
-          mt="20px"
+          mt="45px"
         >
           View My Resume
         </Button>

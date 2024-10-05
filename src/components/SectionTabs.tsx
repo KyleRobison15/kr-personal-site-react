@@ -19,22 +19,20 @@ const SectionTabs = ({ tabIndex }: Props) => {
   const bg = useColorModeValue("gray.50", "gray.900");
 
   return (
-    <Box>
+    <Box bg={bg} px="50px">
       <Tabs
         isFitted
         variant="line"
         w="100%"
         size={["md", "lg"]}
         id="tabs"
-        bg={bg}
-        borderRadius={10}
-        shadow="lg"
         index={tabIndex}
       >
         <TabList hidden>
           <Tab>Portfolio</Tab>
           <Tab borderTopLeftRadius={10}>Skills</Tab>
           <Tab borderTopRightRadius={10}>Resume</Tab>
+          <Tab>Contact</Tab>
         </TabList>
         <TabPanels p={4}>
           <TabPanel>

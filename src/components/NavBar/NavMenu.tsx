@@ -1,5 +1,6 @@
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
+  Icon,
   IconButton,
   Menu,
   MenuButton,
@@ -30,7 +31,7 @@ const NavMenu = ({ onNavChange }: Props) => {
             offset={navItem.offset}
             onNavChange={() => onNavChange(navItem.tabIndex)}
           >
-            <MenuItem>{navItem.title}</MenuItem>
+            <MenuItem icon={<Icon as={navItem.icon}/>}>{navItem.title}</MenuItem>
           </SmoothScroll>
         ))}
       </MenuList>

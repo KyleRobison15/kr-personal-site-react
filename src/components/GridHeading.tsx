@@ -9,7 +9,7 @@ interface Props {
 
 const GridHeading = ({ heading, selectedCategory, defaultCategory }: Props) => {
   return (
-    <Text fontSize={sectionHeadingSizes} textAlign="center" pb={5}>
+    <Text fontSize={sectionHeadingSizes} textAlign="center">
       {selectedCategory === defaultCategory
         ? `My ${heading}`
         : `My ${selectedCategory} ${heading}`}

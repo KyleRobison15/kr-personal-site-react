@@ -30,7 +30,7 @@ const Portfolio = () => {
         selectedCategory={selectedCategory}
         defaultCategory={"All Skills"}
       />
-      <Text fontSize="xl" px="12px" textAlign="center">
+      <Text fontSize="xl" px="12px" mb="24px" textAlign="center">
         The following applications are personal projects I've developed outside
         of my normal day job as a Full-Time Software Engineer.
       </Text>

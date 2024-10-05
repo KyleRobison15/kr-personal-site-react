@@ -14,8 +14,15 @@ import HIconList from "../IconList/HIconList";
 import VIconList from "../IconList/VIconList";
 import MobileHeading from "../MobileHeading";
 import ScrollButton from "../ScrollButton";
+import { navItems } from "../../services/nav-menu-options";
+import DaytimeMountains from "../../assets/DaytimeMountains.jpeg";
+import NightMountains from "../../assets/NIghtMountains.jpeg";
 
-const Splash = () => {
+interface Props {
+  onNavChange: (tabIndex: number | null) => void;
+}
+
+const Splash = ({onNavChange}: Props) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -32,7 +39,7 @@ const Splash = () => {
     >
       <GridItem
         area="left"
-        h="100vh"
+        minH="100vh"
         w="100%"
         bg={colorMode === "light" ? "gray.50" : "gray.600"}
         display="flex"
@@ -57,10 +64,10 @@ const Splash = () => {
         >
           <Hide above="lg">
             <MobileHeading />
-            <VIconList />
+            <VIconList onNavChange={onNavChange} />
           </Hide>
           <Show above="lg">
-            <HIconList />
+            <HIconList onNavChange={onNavChange} />
           </Show>
         </Flex>
       </GridItem>
@@ -79,7 +86,7 @@ const Splash = () => {
             <ScrollButton
               text={"About Me"}
               to={"aboutme"}
-              offset={-100}
+              offset={navItems[1].offset}
               lightBg={"gray.100"}
               darkBg={"gray.900"}
             />

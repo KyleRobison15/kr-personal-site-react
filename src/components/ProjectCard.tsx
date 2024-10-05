@@ -13,6 +13,7 @@ import {
   Link,
   Box,
   AspectRatio,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { Project } from "../hooks/useProjects";
 import { SiGithub } from "react-icons/si";
@@ -26,9 +27,10 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
   const [show, setShow] = useState(false);
+  const cardBg = useColorModeValue("gray.50", "gray.700");
 
   return (
-    <Card boxShadow="lg" variant="outline">
+    <Card bg={cardBg} boxShadow="lg" variant="outline" p={2}>
       <CardHeader pb={2}>
         <Flex flexDir="column">
           <Heading size={["md", "lg"]}>

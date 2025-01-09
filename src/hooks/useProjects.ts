@@ -34,7 +34,7 @@ const projects: Project[] = [
     image: letsClimbImage,
     description:
       "Let's Climb is a full stack, dynamic web application built using Java, Spring, MySQL and React. It is deployed (using Jenkins CI/CD) to my self-managed Kubernetes cluster hosted on Digital Ocean, and is fully secured using Spring Security 6 and JSON Web Token authentication. Not only is it a fun application, it displays a high level of understanding of many fundamental skills required by a Full Stack developer. I also designed and documented the REST API and database schema using many of the industry standards I've learned at my day job. I'd highly encourage any prospective employers to review the API Documentation and GitHub repos for this project.",
-    projectUrl: "http://167.172.208.26:31276/swagger-ui/index.html",
+    projectUrl: "http://178.128.65.32:31276/swagger-ui/index.html",
     gitHubUrl:
       "https://github.com/KyleRobison15/krd-lets-climb-rest/blob/main/README.md",
   },
